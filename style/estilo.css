@@ -10,10 +10,11 @@
 	max-width: 1024px;
 	margin: 0 auto;
 	width: 100%;
+	padding: 0 20px;
 }
 
 
-/* Topo da página */
+/* Topo da página e Rodapé */
 .topo, .rodape {
 	padding: 14px 20px;
 	display: flex;
@@ -41,9 +42,10 @@
 	color: #000000;
 }
 nav a{
-	padding-right: 10px;
+	padding: 0 8px;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: 600;
 	font-size: 18px;
 	color: #233032;
 }
@@ -54,7 +56,6 @@ nav a{
 	color: #fff;
 }
 .secao-banner {
-	padding: 0 25px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -86,7 +87,6 @@ nav a{
 	background-color: #233032;
 }
 .anuncio {
-	padding: 0 20px;
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -124,9 +124,6 @@ nav a{
 }
 
 /* Seção */
-.planos {
-	padding: 0 20px;
-}
 .secao h2 {
 	padding-bottom: 50px;
 	font-size: 32px;
@@ -138,16 +135,14 @@ nav a{
 /* Seção Informações */
 .informacao {
 	text-align: center;
-	padding: 100px 20px;
+	padding: 100px 0px;
 }
 .info {
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
 }
-.info div {
-	padding: 0 15px;
-}
+
 .info img {
 	padding-bottom: 25px;
 	height: 100px;
@@ -163,7 +158,6 @@ nav a{
 /* Seção Planos */
 .tabela {
 	margin-bottom: 80px;
-	padding: 0 20px;
 	width: 100%;
 	text-align: center;
 	box-shadow: 0px 2px 40px 15px rgba(47,134,214,1);
@@ -199,14 +193,12 @@ tbody tr {
 	background-color: #f1f3f7;
 }
 td {
-	width: 250px;
     text-align: center;
     font-weight: 600;
     padding: 15px;
 }
 td:hover {
     background-color: #2f86d6;
-    color: #fff;
 }
 
 /* Segundo Anúncio */
@@ -215,7 +207,6 @@ td:hover {
 }
 .segundo-anuncio {
 	background-color: #2f86d6;
-	padding: 0px 20px;
 }
 .segundo-anuncio h2 {
 	max-width: 550px;
@@ -249,3 +240,141 @@ td:hover {
 .dev span {
 	color: #2f86d6;
 }
+
+/* INÍCIO RESPONSIVIDADE */
+
+/* Telas Mobile até 500px*/
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telas de tablet  */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+	.container {
+		padding: 0 5px;
+	}
+
+	/* Seção topo */
+	.container {
+		padding: 0 5px;
+	}
+	.topo {
+		height: 140px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	nav {
+		padding: 0;
+		padding-top: 10px;
+		border-top: 1px solid #233032;
+	}
+
+	/* Seção Banner */
+	.text-banner p {
+		font-size: 12px;
+	}
+	.text-banner h2 {
+		font-size: 20px;
+	}
+	.secao-banner img {
+		display: none;
+	}
+	.anuncio a {
+		font-size: 14px;
+		margin-bottom: 50px;
+	}
+
+	/* Seção Anúncios */
+	.anuncio{
+		height: 120px;
+		display: flex;
+		flex-direction: column;
+	}
+	.anuncio h2 {
+		font-size: 20px;
+	}
+	.anuncio p {
+		font-size: 12px;
+	}
+	.anuncio a {
+		font-size: 14px;
+		width: 200px;
+	}
+
+	/* Seção Informações */
+	.informacao h2 {
+		font-size: 22px;
+	}
+	.info h3 {
+		font-size: 18px;
+	}
+	.info p {
+		font-size: 14px;
+	}
+
+	/* Seção Planos */
+	.planos h2 {
+		font-size: 28px;
+	}
+
+	/* Seção Tabela */
+	.celula-cabeçalho h3 {
+		font-size: 14px;
+	}
+	.celula-cabeçalho img {
+		display: none;
+	}
+
+	.linhas-da-tabela {
+		font-size: 12px;
+	}
+	tbody td {
+		padding: 5px;
+	}
+}
+
+/* Telas pequenas */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Seção topo */
+	.logo-topo h1 {
+		font-size: 28px;
+	}
+	.logo-topo p {
+		font-size: 14px;
+	}
+	nav a {
+		font-size: 16px;
+	}
+
+
+	/* Seção Banner */
+	.text-banner p {
+		font-size: 14px;
+	}
+	.text-banner h2 {
+		font-size: 24px;
+	}
+	.secao-banner img {
+		width: 400px;
+	}
+
+	/* Seção Anúncios */
+	.anuncio h2 {
+		font-size: 18px;
+	}
+	.anuncio p {
+		font-size: 14px;
+	}
+	.anuncio a {
+		font-size: 14px;
+		width: 200px;
+	}
+}
+
+/* Telas Desktop HD ou superior*/
+@media screen and (min-width: 1024px) {
+
+}
+/* FIM RESPONSIVIDADE */
